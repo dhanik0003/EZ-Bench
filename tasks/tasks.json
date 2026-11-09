@@ -1,0 +1,116 @@
+[
+    {
+        "id": 1,
+        "repo": "bench-math-utils",
+        "repoUrl": "https://github.com/dhanik0003/bench-math-utils.git",
+        "baseCommit": "aea80f23c3c50da7a15969c934c2744edb687d46",
+        "fixCommit": "c04fff412416c77b38f2b034004b7baefe53218b",
+        "targetFiles": [
+            "src/math.js"
+        ],
+        "hiddenTestFiles": [
+            "tests/math.test.js"
+        ],
+        "issueTitle": "average() returns NaN for an empty array",
+        "issueDescription": "average([]) returns NaN. An empty list has no average, so it should throw an error saying the array is empty.",
+        "difficulty": "EASY",
+        "failToPass": [
+            "average throws for an empty array"
+        ],
+        "passToPass": [
+            "average handles negative numbers correctly",
+            "average returns the mean of a list of numbers",
+            "average returns the value itself for a single-element array",
+            "percentage computes what percent 1 is of 4",
+            "percentage returns 100 when part equals total",
+            "simpleInterest returns zero when the rate is zero"
+        ],
+        "status": "PENDING"
+    },
+    {
+        "id": 2,
+        "repo": "bench-math-utils",
+        "repoUrl": "https://github.com/dhanik0003/bench-math-utils.git",
+        "baseCommit": "c04fff412416c77b38f2b034004b7baefe53218b",
+        "fixCommit": "913b6dc178a95791cbbb9a0a36fac0c1f06c1461",
+        "targetFiles": [
+            "src/math.js"
+        ],
+        "hiddenTestFiles": [
+            "tests/math.test.js"
+        ],
+        "issueTitle": "simpleInterest result is 100 times too large",
+        "issueDescription": "simpleInterest(1000, 5, 2) returns 10000. The rate is a percentage (5 means 5%), so the expected result is 100.",
+        "difficulty": "EASY",
+        "failToPass": [
+            "simpleInterest computes correctly for 5 percent over 2 years"
+        ],
+        "passToPass": [
+            "average handles negative numbers correctly",
+            "average returns the mean of a list of numbers",
+            "average returns the value itself for a single-element array",
+            "average throws for an empty array",
+            "percentage computes what percent 1 is of 4",
+            "percentage returns 100 when part equals total",
+            "simpleInterest returns zero when the rate is zero"
+        ],
+        "status": "PENDING"
+    },
+    {
+        "id": 3,
+        "repo": "bench-string-utils",
+        "repoUrl": "https://github.com/dhanik0003/bench-string-utils.git",
+        "baseCommit": "2513c1f54ae1161697df1d9149e231536306e7bc",
+        "fixCommit": "065d9f6f3c97c2d777695ad95719c02a7209f916",
+        "targetFiles": [
+            "src/string.js"
+        ],
+        "hiddenTestFiles": [
+            "tests/string.test.js"
+        ],
+        "issueTitle": "capitalize crashes on an empty string",
+        "issueDescription": "capitalize(\"\") throws a TypeError. It should return an empty string.",
+        "difficulty": "EASY",
+        "failToPass": [
+            "capitalize capitalize returns empty string for empty input"
+        ],
+        "passToPass": [
+            "capitalize capitalizes the first letter of a lowercase word",
+            "capitalize leaves an already capitalized word unchanged",
+            "slugify converts spaces and case to form a basic slug",
+            "slugify removes punctuation",
+            "truncate returns original string if within limit",
+            "truncate truncates and adds ellipsis if over limit"
+        ],
+        "status": "PENDING"
+    },
+    {
+        "id": 4,
+        "repo": "bench-string-utils",
+        "repoUrl": "https://github.com/dhanik0003/bench-string-utils.git",
+        "baseCommit": "065d9f6f3c97c2d777695ad95719c02a7209f916",
+        "fixCommit": "1344887e9759198d0cf40ee7f050b4ccee764652",
+        "targetFiles": [
+            "src/string.js"
+        ],
+        "hiddenTestFiles": [
+            "tests/string.test.js"
+        ],
+        "issueTitle": "slugify leaves repeated dashes",
+        "issueDescription": "slugify(\"hello   world\") returns \"hello---world\". Expected \"hello-world\".",
+        "difficulty": "EASY",
+        "failToPass": [
+            "slugify collapses multiple spaces into a single dash"
+        ],
+        "passToPass": [
+            "capitalize returns empty string for empty input",
+            "capitalize capitalizes the first letter of a lowercase word",
+            "capitalize leaves an already capitalized word unchanged",
+            "slugify converts spaces and case to form a basic slug",
+            "slugify removes punctuation",
+            "truncate returns original string if within limit",
+            "truncate truncates and adds ellipsis if over limit"
+        ],
+        "status": "PENDING"
+    }
+]
